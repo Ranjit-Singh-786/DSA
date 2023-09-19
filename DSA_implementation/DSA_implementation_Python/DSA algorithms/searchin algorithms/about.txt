@@ -1,0 +1,55 @@
+i am trying to implementing all these algorithms in python,
+so that i can enhance my coding skills,
+and with the help of these strategies i will be able to write
+a optimize code, with good time complexity.
+
+all are common algorithms for searching mentioned below
+For Arrays:
+
+1. Linear Search
+2. Binary Search
+3. Jump Search
+4. Interpolation Search
+5. Exponential Search
+6. Ternary Search
+7. Fibonacci Search
+
+For Strings:
+
+1. Knuth-Morris-Pratt Algorithm
+2. Boyer-Moore Algorithm
+
+Linear Search:
+
+Advantages: Simple to implement, works for unsorted data.
+Disadvantages: Less efficient for large sorted arrays.
+Linear Search is typically the only viable option. It has a time complexity of O(n), where n is the size of the array.
+
+Binary Search:
+
+Advantages: Highly efficient for sorted arrays, O(log n) time complexity.
+Disadvantages: Requires a sorted array.
+Binary Search is generally the best choice, offering a time complexity of O(log n), where n is the size of the array.
+
+Interpolation Search:
+
+Advantages: Efficient for uniformly distributed data.
+Disadvantages: Requires a sorted array and may not perform well for non-uniform data.
+
+Interpolation Search and Ternary Search may perform well, as they take advantage of data distribution. However, 
+actual performance may vary depending on the data.
+
+Exponential search :
+Advantages: Efficient for unbounded or very large arrays, O(log i) time complexity.
+Disadvantages: Requires a sorted array.
+may be more efficient due to its O(log i) time complexity, where i is the index where the element is found.
+
+Ternary Search:
+
+Advantages: Efficient for uniformly distributed data, works for sorted arrays.
+Disadvantages: Slightly more complex than binary search.
+Ternary Search may perform well, as they take advantage of data distribution. However, actual performance may vary depending on the data.
+
+These algorithms are commonly used for searching within
+arrays and strings. Keep in mind that some algorithms may have 
+variations or optimizations depending on the specific use case.
