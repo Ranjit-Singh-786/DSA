@@ -1,0 +1,39 @@
+Bubble Sort:  # comparing in adjacent
+
+Simple but inefficient.
+Works by repeatedly stepping through the list, comparing each pair of adjacent items, and swapping them if they are in the wrong order.
+Time complexity: O(n^2) in the worst case.
+
+
+Selection Sort:    # comparing in unsorted array space
+
+Simple and easy to understand.
+Divides the input into a sorted and an unsorted region, repeatedly selects the smallest (or largest) element from the unsorted region and swaps it with the first element of the unsorted region.
+Time complexity: O(n^2) in the worst case.
+
+
+Insertion Sort:
+
+Efficient for small datasets and mostly sorted datasets.
+Builds the sorted array one element at a time by repeatedly taking the next element and inserting it into the correct position in the already sorted part of the array.
+Time complexity: O(n^2) in the worst case.
+
+
+Merge Sort:
+
+A divide-and-conquer algorithm.
+Divides the unsorted list into n sub-lists, each containing one element, and then repeatedly merges sub-lists to produce new sorted sub-lists until there is only one sub-list remaining.
+Time complexity: O(n log n) in the worst case.
+
+
+Quick Sort:
+
+A divide-and-conquer algorithm that uses a pivot element to partition the array into two halves.
+The pivot is chosen, elements are partitioned around the pivot, and then the algorithm is applied recursively to the two sub-arrays.
+Time complexity: O(n^2) in the worst case, but typically O(n log n) on average.
+
+
+Heap Sort:
+
+Builds a max-heap (for ascending order) or a min-heap (for descending order) and repeatedly extracts the maximum (or minimum) element from it.
+Time complexity: O(n log n) in the worst case.
