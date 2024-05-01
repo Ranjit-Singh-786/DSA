@@ -33,6 +33,8 @@ int main(){
         {1,2,3}
     };
 
+
+
     int arr[3] = {5,4,6};
     cout<<"Size of 1D array : "<<size(arr)<<endl;
     cout<<"Size of 2D array : "<<size(arr_2D)<<endl;
@@ -43,7 +45,7 @@ int main(){
 
     for(int i=0;i<size(arr_2D);i++){
         for(int j=0;j<size(arr_2D[i]);j++){
-            cout<<"Array item "<<i<<","<<j<<" "<<arr_2D[i][j]<<endl;
+            cout<<"Array item "<<i<<","<<j<<"--> "<<arr_2D[i][j]<<endl;
         }
     }
 
