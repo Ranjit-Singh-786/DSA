@@ -9,6 +9,41 @@ int main(){
     cout << "No of character in string : "<<size(st)<<endl;
     cout << "Size of string : "<<sizeof(st)<<endl;
     cout << "character printing : "<< st[2]<<endl;
+    cout << "Substring from string : "<<st.substr(0,3)<<endl;
+    
+    //string reversing printing program - 1
+    int n = st.length();
+    cout<<"no of char in str : "<<n<<endl;
+    cout<<endl;
+    cout << "Reversed string by program-1"<<endl;
+    for(int i=n-1;i>=0;--i){
+        cout<<st[i];
+    }
+    cout<<endl;
+
+    //string reversing printing program - 2
+    string  str = "upflairs";
+    for(int i =0;i<n/2;i++){
+        char temp = str[i];
+        str[i] = str[n-i-1];
+        str[n-i-1] = temp;
+
+    }
+    cout<< "String reversed by progr-2 : "<<str<<endl;
+    //string reversing printing program - 3
+    int start = 0;
+    int end = st.length()-1;
+    while(start<end){
+        char temp = st[start];
+        st[start] = st[end];
+        st[end] = temp;
+        ++start;
+        --end;
+    }
+    cout<<"Reversed string by progr-3 :"<<st<<endl;
+
+
+    cout<<endl;
 
     string st2;
     cout << "enter your string "<<endl;
