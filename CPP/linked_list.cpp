@@ -48,6 +48,7 @@ class LinkedList{
     void RemoveNode(int position){
         // #first condition for empty linkedlist 
         if (head==nullptr){
+            cout << "List is empty" << endl;
             return;
         }
 
@@ -74,6 +75,18 @@ class LinkedList{
         delete temp;
     }
 
+// To count the no. of node
+    int NodeCount(){
+        int node_counted = 0;
+        Node* current = head;
+        while(current!=nullptr){   // till the end
+            ++node_counted;
+            current = current->next;
+        }
+        cout<<"No. of node : "<<node_counted<<endl;
+        return node_counted;
+    }
+
 };
 
 
@@ -86,6 +99,8 @@ int main(){
     list.InsertElement(24);
     list.InsertElement(42);
 
+    int node_counting = 0;
+    node_counting = list.NodeCount();
     // calling display function 
     list.display();
 

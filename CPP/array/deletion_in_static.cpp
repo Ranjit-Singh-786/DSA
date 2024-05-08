@@ -25,7 +25,11 @@ int main(){
     DeletionElement(arr,n,delete_position);
     cout<<"After deleting element"<<endl;
     for(int num:arr){
+        if (num==0){
+            break;
+        }
         cout<<num<<" , ";
+        
     }
 
 
