@@ -23,11 +23,10 @@ int main(){
 
     //string reversing printing program - 2
     string  str = "upflairs";
-    for(int i =0;i<n/2;i++){
+    for(int i = 0;i<n/2;i++){
         char temp = str[i];
         str[i] = str[n-i-1];
         str[n-i-1] = temp;
-
     }
     cout<< "String reversed by progr-2 : "<<str<<endl;
     //string reversing printing program - 3
