@@ -20,8 +20,9 @@ def exponential_search(arr,target):
             right = mid -1
     return -1
 
+
 arr  = list(range(0,205))
-target = 206
+target = 5
 result = exponential_search(arr=arr,target=target)
 if result != -1:
     print(f"target element founded on this position {result} and element is {arr[result]}")
