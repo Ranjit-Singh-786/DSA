@@ -3,11 +3,9 @@
 def Bubble_sort(arr):
     temp = 0
     for i in range(len(arr)):
-        for j in range(i+1,len(arr)):
-            if arr[i] > arr[j]:
-                temp   = arr[i]
-                arr[i] = arr[j]
-                arr[j] = temp
+        for j in range(0,len(arr)-i-1):
+            if arr[j] > arr[j+1]:
+              arr[j],arr[j+1] = arr[j+1],arr[j]
     return arr
 
 arr = [52,14,52,36,45,12,25,1,56,78,85,45,96,25,14,25,631]
@@ -22,11 +20,9 @@ print('sorted array :',sorted_arr)
 def Bubble_sort_desc(arr):
     temp = 0
     for i in range(len(arr)):
-        for j in range(i+1,len(arr)):
-            if arr[i] < arr[j]:
-                temp = arr[i]
-                arr[i] = arr[j]
-                arr[j] = temp
+        for j in range(0,len(arr)-i-1):
+            if arr[j] < arr[j+1]:
+              arr[j],arr[j+1] = arr[j+1],arr[j]
     return arr
 
 arr2 = [52,14,52,36,45,12,25,1,56,78,85,45,96,25,14,25,631]
